@@ -1,0 +1,103 @@
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+header {
+    background-color: #ebcebe;
+    padding: 1em 0;
+}
+
+header h1 {
+    color: #f5ebeb;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 100;
+    bottom: .8em;
+}
+
+header img {
+    width: 100;
+    height: 100;
+    border-radius: 60%;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+nav{
+    background-color: #F5C6AA;
+    margin-bottom: 2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 16.3%;
+}
+
+nav ul li a{
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.2em 0.4em;
+    display: block;
+    position: relative;
+}
+
+nav ul li a:hover {
+    background: #F6A9A9;
+    color: white;
+
+}
+
+nav ul li a.activo {
+    background: #F6A9A9;
+}
+
+footer {
+    background: #F5C6AA;
+    clear: both;
+    color: #FF6B6B;
+    padding: 3em 0;
+    margin-top: 2em;
+}
+
+footer p {
+    font-size: 0.7em;
+    font-style: italic;
+    text-align: center;
+}
+
+div a {
+    text-decoration: none;
+    color: #FF6B6B;
+}
+div a:hover {
+    color: #F6A9A9;
+}
+
+.pie {
+    text-align: center;
+}
+
+.text-left {
+    font-size: 2em;
+    font-style: bold;
+    color: #FF6B6B;
+
+}
+
+.titulo {
+    font-style: bold;
+    color: #FF6B6B;
+}
+
+th {
+    color: #FF6B6B;
+
+}

@@ -1,0 +1,55 @@
+<div class="container" style="margin: 50px auto">
+ {{! FILA 1 - Bienvenida al Novedades tras login}}    
+    <div class="row">
+       <div class="col">
+           <p class="text-left"> Bienvenido/a {{usuario}}!</p>
+
+           {{!Boton para cerrar sesión}}
+            <div class="col-14 text-right">
+               <a href="/admin/login/logout" class="text-right btn btn-sm btn-danger">Cerrar sesión    <i class="fas fa-sign-out-alt"></i></a>
+            </div> 
+       </div> 
+    </div>
+ {{!Fin de fila 1}}
+ {{! FILA 2 - Botón para agregar nuevas novedades}}    <br/>
+    <div class="row">
+       <div class="col-7">
+           <h3 class="titulo">Listado de novedades</h3>
+       </div> 
+       <div class="col-5 text-right">
+          <a class="btn btn-success" href="/admin/novedades/agregar"><i class="fa fa-plus" aria-hidden="true"></i>    Nuevo</a> 
+       </div>
+    </div><br/>
+ {{!Fin de fila 2}}
+ {{! FILA 3}}
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr class="table-danger">
+                        <th scope="col">#</th>
+                        <th scope="col">titulo</th>
+                        <th scope="col">imagen</th>
+                        <th class="text-center">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{!incorporo la acción para agregar novedades}}
+                    {{#each novedades}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{titulo}}</td>
+                        <td>{{{imagen}}}</td>
+                        <td class="text-center">
+                            <a class="btn btn-danger" href="/admin/novedades/modificar/{{id}}"><i class="fas fa-pencil-alt"></i></a>
+                            <a class="btn btn-danger" href="/admin/novedades/eliminar/{{id}}"><i class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+ {{!Fin fila 3}}
+
+</div>
